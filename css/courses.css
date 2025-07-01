@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #2F3E54;
+    --color2: #252525;
+    --color3: #ffffff;
+    --color4: #f6f6f6;
+    --color5: #F59321;
+    --poppins: "Poppins";
+    --Helvetica: "Helvetica";
+
+}
+
+a {
+    text-decoration: none !important;
+    font-family: var(--Helvetica);
+}
+
+@font-face {
+    font-family: 'HelveticaCompressed';
+    src: url('../helvetica-compressed-5871d14b6903a.otf') format('woff2'),
+        url('../helvetica-compressed-5871d14b6903a.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    /* padding: 20px 50px; */
+    background-color: var(--color1);
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0em 4em;
+    padding-top: 1em;
+
+}
+
+
+.navbar-brand img {
+
+    height: 100px;
+    width: 150px;
+
+
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 15px;
+    font-weight: 500;
+    font-family: 'HelveticaCompressed', sans-serif;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color5);
+    border-bottom: 3px solid var(--color5);
+}
+
+.register-btn {
+     border: 2px solid var(--color5);
+    font-weight:500;
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    transition: all 0.3s ease;
+    padding: 5px 20px;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-family:'HelveticaCompressed', sans-serif;
+    letter-spacing: 1px;
+}
+
+.register-btn:hover {
+    background-color: #f7931e;
+    color: white;
+}
+
+.heading-section {
+    text-align: center;
+    height: 35vh;
+    background-color: var(--color1);
+}
+
+.heading-section h1 {
+    font-size: 65px;
+    font-weight: 800;
+    padding-top: 50px;
+    color: var(--color3);
+    font-family: 'HelveticaCompressed', sans-serif;
+}
+
+/*----------------------section1-------------------------------- */
+.section-title {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--color5);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'HelveticaCompressed', sans-serif;
+}
+
+.main-heading {
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'HelveticaCompressed', sans-serif;
+}
+
+.course-card {
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.course-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+.course-title {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'HelveticaCompressed', sans-serif;
+    letter-spacing: 1px;
+}
+
+.course-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.learn-btn {
+    background-color: transparent;
+    color: var(--color3);
+    border: 2px solid var(--color5);
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'HelveticaCompressed', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+
+.learn-btn:hover {
+    background-color: var(--color5);
+    color: var(--color3);
+}
+
+.icon-circle {
+    background-color: var(--color3);
+    color: var(--color1);
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-circle i {
+    font-size: 10px;
+    color: black;
+    align-items: center;
+}
+/*------------------------------------------faq---------------------------------- */
+.faq {
+    background-color: var(--color2);
+    height: 90vh;
+    width: 100%;
+
+}
+
+.faq-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    font-family: 'HelveticaCompressed', sans-serif;
+}
+
+.faq-title .highlight {
+    color: var(--color5);
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'HelveticaCompressed', sans-serif;
+}
+
+.faq .headings {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+    font-family: 'HelveticaCompressed', sans-serif;
+}
+
+.a12 {
+    padding-top: 40px;
+    margin-bottom: 2rem;
+}
+
+.faqs-accordion .accordion-button {
+    background-color: transparent;
+    font-family: var(--Helvetica);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--body);
+    line-height: 28px;
+}
+
+.faqs-accordion .accordion-body {
+    font-family: var(--Helvetica);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 2rem;
+
+}
+
+.faqs-accordion .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    --bs-accordion-color: var(--color3);
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: white;
+    --bs-accordion-btn-padding-x: 0.1rem;
+    --bs-accordion-btn-padding-y: 1.4rem;
+    --bs-accordion-btn-color: var(--color3);
+    --bs-accordion-btn-bg: var(--color3);
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-width: 1.20rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-body-padding-x: 0.1rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: var(--color3);
+    --bs-accordion-active-bg: none;
+}
+
+/*------------------------------footer-------------------------- */
+.footer {
+    background-color: var(--color1);
+    min-height: 80vh;
+    padding: 4em 0em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.links {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'HelveticaCompressed', sans-serif; 
+    letter-spacing: 1px;
+
+}
+
+.list-unstyled li {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    font-family: 'Helvetica', sans-serif; 
+    
+}
+
+.educraving-bg-text1{
+    bottom: -30px;
+    font-size:22vw;
+    color:transparent;
+    -webkit-text-stroke:2px white;
+    font-weight: 500;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'HelveticaCompressed', sans-serif;
+    transform: rotate(10deg);
+    margin-left: -20px;
+    margin-top: -10px;
+    letter-spacing: 1px;
+}
+.footer-text{
+    font-size: 16px;
+    font-weight: 400;
+     font-family: 'Helvetica', sans-serif;
+     margin-bottom: 2rem;
+}
+footer .container,
+footer .row {
+    position: relative;
+    z-index: 2;
+}
+/*---------------------------------Responsive css-------------------------------- */
+/* header responsive */
+@media (max-width: 991.98px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1em 2em;
+  }
+
+  .navbar-brand img {
+    height: 70px;
+    width: 120px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .register-btn {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+  }
+    .navbar-collapse {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color:var(--color2); 
+  z-index: 999;
+}
+
+.navbar-collapse.show {
+  display: block;
+}
+ .navbar-toggler {
+  border: none;
+}
+}
+/*--------------------------Mobile------------------------------- */
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 1em 1.5em;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 60px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5em;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 15px;
+    margin: 8px 0;
+  }
+
+  .register-btn {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    height: 38px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
+/* ---------------headings-section--------------- */
+@media (max-width: 575.98px) {
+  .heading-section {
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  .heading-section h1 {
+    font-size: 45px;
+    padding-top: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+/*---------------------------------section1---------------------------------- */
+@media (max-width: 575.98px) {
+  .section-title {
+    font-size: 24px;
+    gap: 5px;
+    text-align:left;
+  }
+
+  .main-heading {
+    font-size: 36px;
+    text-align:left;
+    margin-bottom: -10px;
+    margin-top: 1rem;
+  }
+
+  .course-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .course-img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .course-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .course-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .learn-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .icon-circle {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+  }
+
+  .icon-circle i {
+    font-size: 8px;
+  }
+}
+
+
+/* ---------------------Faq-----------------------------------*/
+@media (max-width: 575.98px) {
+  .faq {
+    height: auto;
+    text-align:left;
+  }
+
+  .faq-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .faq-title .highlight {
+    font-size: 38px;
+  }
+
+  .faq .headings {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .a12 {
+    padding-top: 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  .faqs-accordion .accordion-button {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: -30px;
+    text-align: left;
+  }
+
+  .faqs-accordion .accordion-body {
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+
+  .faqs-accordion .accordion {
+    gap: 8px;
+  }
+}
+
+/* -------------------Footer--------------------- */
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 2em 1em;
+    min-height: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .footer .container {
+    padding: 0;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .col-3,
+  .footer .col-2,
+  .footer .col-9 {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer .col-9 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+  }
+
+  .links {
+    font-size: 25px;
+    margin-bottom:10px;
+  }
+
+  .list-unstyled li {
+    font-size: 15px;
+  }
+
+  .educraving-bg-text1 {
+    font-size: 18vw;
+    text-align: center;
+    transform:none;
+    margin-left: 0;
+    margin-top: -10px;
+    line-height: 1;
+    overflow: hidden;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .footer .mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .footer {
+    padding: 3em;
+    min-height: 40vh;
+  }
+
+  .links {
+    font-size: 22px;
+  }
+
+  .list-unstyled li {
+    font-size: 14px;
+    padding-top: 0.4rem;
+  }
+
+  .educraving-bg-text1 {
+    font-size: 18vw;
+    bottom: -20px;
+    margin-left: -10px;
+    margin-top: -5px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+  /* --------------------------tablet--------------------------- */
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+  .section-title {
+    font-size: 30px;
+    gap: 8px;
+    justify-content:left;
+    text-align:left;
+  }
+
+  .main-heading {
+    font-size: 50px;
+    text-align:left;
+  }
+
+  .course-card {
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    padding: 20px;
+  }
+
+  .course-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .course-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .course-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .learn-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    gap: 10px;
+  }
+
+  .icon-circle {
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+  }
+
+  .icon-circle i {
+    font-size: 9px;
+  }
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+  .faq {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .faq-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .faq-title .highlight {
+    font-size: 40px;
+  }
+
+  .faq .headings {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .a12 {
+    padding-top: 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  .faqs-accordion .accordion-button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faqs-accordion .accordion-body {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  .faqs-accordion .accordion {
+    gap: 8px;
+  }
+}
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+  .heading-section {
+    height: 25vh;
+    padding: 20px 0;
+  }
+
+  .heading-section h1 {
+    font-size: 45px;
+    padding-top: 60px;
+    font-weight: 700;
+  }
+}
